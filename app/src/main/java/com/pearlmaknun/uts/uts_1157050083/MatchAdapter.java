@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -46,6 +47,7 @@ public class MatchAdapter extends RecyclerView.Adapter<MatchAdapter.MatchViewHol
     }
 
     public void getDetail(String tim1, int skor1, String tim2, int skor2){
+        //Toast.makeText(context,""+skor1+skor2, Toast.LENGTH_LONG).show();
         Intent goToDetail = new Intent(context, DetailMatchActivity.class);
         goToDetail.putExtra("Tim1", tim1);
         goToDetail.putExtra("Skor1", skor1);

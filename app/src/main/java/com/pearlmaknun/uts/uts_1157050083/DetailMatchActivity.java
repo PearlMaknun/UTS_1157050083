@@ -20,8 +20,8 @@ public class DetailMatchActivity extends AppCompatActivity {
 
         a.setText(getIntent().getStringExtra("Tim1"));
         b.setText(getIntent().getStringExtra("Tim2"));
-        c.setText(getIntent().getIntExtra("Skor1", 0));
-        c.setText(getIntent().getIntExtra("Skor2", 0));
+        c.setText(""+getIntent().getIntExtra("Skor1", 0));
+        d.setText(""+getIntent().getIntExtra("Skor2", 0));
 
     }
 }

@@ -1,5 +1,7 @@
 package com.pearlmaknun.uts.uts_1157050083;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -68,7 +70,16 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.home) {
+            HomeFragment fragment = new HomeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.Fragment, fragment);
+            fragmentTransaction.commit();
+            return true;
+        } else if (id == R.id.detail) {
+            Intent intent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://liga-indonesia.id/pertandingan/370"));
+            startActivity(intent);
             return true;
         }
 
@@ -90,7 +101,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_about) {
             fragmentClass = AboutMeFragment.class;
         } else if (id == R.id.nav_exit){
-
+            finish();
+            System.exit(0);
         }
 
         try {
