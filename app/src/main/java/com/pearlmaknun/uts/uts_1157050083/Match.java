@@ -2,80 +2,47 @@ package com.pearlmaknun.uts.uts_1157050083;
 
 public class Match {
 
-    /*private int mId;
-    String JudulMatkul;
-    String Hari;
-    String JamMulai;
-    String Ruangan;
-    String NamaDosen;
-    String NoHpDosen;
-    String Catatan;
+    String Tim1;
+    String Tim2;
+    int Skor1;
+    int Skor2;
 
-    public Match(){
+    public Match(String Tim1, int Skor1, String Tim2, int Skor2) {
+        this.Tim1 = Tim1;
+        this.Skor1 = Skor1;
+        this.Tim2 = Tim2;
+        this.Skor2 = Skor2;
     }
 
-    public int getmId() {
-        return mId;
+    public String getTim1() {
+        return Tim1;
     }
 
-    public void setmId(int mId) {
-        this.mId = mId;
+    public void setTim1(String Tim1) {
+        this.Tim1 = Tim1;
     }
 
-    public String getJudulMatkul() {
-        return JudulMatkul;
+    public String getTim2() {
+        return Tim2;
     }
 
-    public void setJudulMatkul(String JudulMatkul) {
-        this.JudulMatkul = JudulMatkul;
+    public void setTim2(String Tim2) {
+        this.Tim2 = Tim2;
     }
 
-    public String getHari() {
-        return Hari;
+    public int getSkor1() {
+        return Skor1;
     }
 
-    public void setHari(String Hari) {
-        this.Hari = Hari;
+    public void setSkor1(int Skor1) {
+        this.Skor1 = Skor1;
     }
 
-    public String getJamMulai() {
-        return JamMulai;
+    public int getSkor2() {
+        return Skor2;
     }
 
-    public void setJamMulai(String JamMulai) {
-        this.JamMulai = JamMulai;
+    public void setSkor2(int Skor2) {
+        this.Skor2 = Skor2;
     }
-
-    public String getRuangan() {
-        return Ruangan;
-    }
-
-    public void setRuangan(String Ruangan) {
-        this.Ruangan = Ruangan;
-    }
-
-    public String getNamaDosen() {
-        return NamaDosen;
-    }
-
-    public void setNamaDosen(String NamaDosen) {
-        this.NamaDosen = NamaDosen;
-    }
-
-    public String getNoHpDosen() {
-        return NoHpDosen;
-    }
-
-    public void setNoHpDosen(String NoHpDosen) {
-        this.NoHpDosen = NoHpDosen;
-    }
-
-    public String getCatatan() {
-        return Catatan;
-    }
-
-    public void setCatatan(String Catatan) {
-        this.Catatan = Catatan;
-    }*/
-
 }
